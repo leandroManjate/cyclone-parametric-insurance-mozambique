@@ -37,6 +37,8 @@ For the primary threshold of at least 100,000 affected people, the simple wind t
 
 ## Repository structure
 
+All public files are stored directly in the repository root:
+
 ```text
 .
 ├── README.md
@@ -45,21 +47,18 @@ For the primary threshold of at least 100,000 affected people, the simple wind t
 ├── DATA_NOTICE.md
 ├── requirements.txt
 ├── SHA256SUMS.txt
-├── code/
-│   └── run_parametric_insurance_final_pipeline.py
-├── data/
-│   ├── event_master_uniform.csv
-│   ├── chirps_metrics_uniform.csv
-│   ├── trigger_tests_uniform.csv
-│   ├── model_predictions_uniform.csv
-│   ├── spatial_sensitivity_uniform.csv
-│   ├── paired_model_comparisons.csv
-│   ├── hazard_impact_associations.csv
-│   ├── final_primary_results.csv
-│   ├── chirps_uniformization_audit.csv
-│   └── input_file_manifest_public.csv
-└── docs/
-    └── README_REPRODUCIBILITY.md
+├── README_REPRODUCIBILITY.md
+├── run_parametric_insurance_final_pipeline.py
+├── event_master_uniform.csv
+├── chirps_metrics_uniform.csv
+├── trigger_tests_uniform.csv
+├── model_predictions_uniform.csv
+├── spatial_sensitivity_uniform.csv
+├── paired_model_comparisons.csv
+├── hazard_impact_associations.csv
+├── final_primary_results.csv
+├── chirps_uniformization_audit.csv
+└── input_file_manifest_public.csv
 ```
 
 ## Reproducing the analysis
@@ -79,7 +78,7 @@ The final pipeline expects three inputs:
 Example:
 
 ```bash
-python code/run_parametric_insurance_final_pipeline.py \
+python run_parametric_insurance_final_pipeline.py \
   --master /path/to/integrated_event_master_final.csv \
   --ibtracs /path/to/IBTrACS.since1980.v04r01.nc \
   --chirps-root /path/to/chirps/files \
