@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Testing Multi-Hazard and Machine-Learning Triggers for Cyclone Parametric Insurance: A Practical and Reproducible Evaluation of Basis Risk in Mozambique"
+message: "If you use these data or code, please cite the associated article and this repository."
+type: software
+authors:
+  - family-names: "Manjate"
+    given-names: "Valter Tito"
+  - family-names: "Manjate"
+    given-names: "Leandro Tito"
+repository-code: "https://github.com/leandroManjate/cyclone-parametric-insurance-mozambique"
+license: "MIT"

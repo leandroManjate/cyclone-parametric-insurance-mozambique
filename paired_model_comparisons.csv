@@ -1,0 +1,4 @@
+reference_model,comparison_model,mcnemar_exact_p,reference_correct_comparison_wrong,reference_wrong_comparison_correct
+M1_calibrated_wind,M0_fixed_wind_119,1.0,0,0
+M1_calibrated_wind,M2_logistic_multihazard,1.0,1,0
+M1_calibrated_wind,M3_random_forest_multihazard,0.5,2,0
